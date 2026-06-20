@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { BrainCircuit, Send, User, Sparkles } from 'lucide-react';
-import './Mentor.css';
+import './AIMentor.css';
 
 let msgCounter = 2;
 

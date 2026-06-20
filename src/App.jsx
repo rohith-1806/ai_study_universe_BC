@@ -3,19 +3,19 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence } from 'framer-motion';
 
 // Components
-import Cursor from './components/Cursor/Cursor';
-import Navbar from './components/Navbar/Navbar';
-import LoadingScreen from './components/Loading/LoadingScreen';
-import Footer from './components/Footer/Footer';
+import CustomCursor from './components/CustomCursor';
+import Navbar from './components/Navbar';
+import Loader from './components/Loader';
+import Footer from './components/Footer';
 
 // Pages
-import Landing from './pages/Landing/Landing';
-import Universe from './pages/Universe/Universe';
-import Mentor from './pages/Mentor/Mentor';
-import Roadmap from './pages/Roadmap/Roadmap';
-import Dashboard from './pages/Dashboard/Dashboard';
-import Achievements from './pages/Achievements/Achievements';
-import Certificate from './pages/Certificate/Certificate';
+import Home from './pages/Home';
+import Universe from './pages/Universe';
+import AIMentor from './pages/AIMentor';
+import Roadmap from './pages/Roadmap';
+import Dashboard from './pages/Dashboard';
+import Achievements from './pages/Achievements';
+
 
 import './App.css';
 
@@ -25,13 +25,13 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<Home />} />
         <Route path="/universe" element={<Universe />} />
-        <Route path="/mentor" element={<Mentor />} />
+        <Route path="/ai-mentor" element={<AIMentor />} />
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/achievements" element={<Achievements />} />
-        <Route path="/certificate" element={<Certificate />} />
+        
       </Routes>
     </AnimatePresence>
   );
@@ -52,9 +52,9 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <Cursor />
+        <CustomCursor />
         {loading ? (
-          <LoadingScreen />
+          <Loader />
         ) : (
           <>
             <Navbar />

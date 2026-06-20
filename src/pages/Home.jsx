@@ -5,7 +5,7 @@ import {
   BrainCircuit, ArrowRight, Sparkles, Target, 
   Map, BarChart, Users, Award, Zap, BookOpen 
 } from 'lucide-react';
-import './Landing.css';
+import './Home.css';
 
 const globalParticles = [...Array(20)].map(() => ({
   x: Math.random() * 100,

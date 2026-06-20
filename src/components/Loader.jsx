@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BrainCircuit } from 'lucide-react';
-import './LoadingScreen.css';
+import './Loader.css';
 
 const ambientParticles = [...Array(10)].map(() => ({
   x: Math.random() * 100,
