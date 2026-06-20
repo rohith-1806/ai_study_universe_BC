@@ -1,0 +1,220 @@
+.roadmap-page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+}
+
+.roadmap-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.roadmap-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.roadmap-header p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.roadmap-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+/* Timeline Lines */
+.timeline-line-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background: var(--bg-glass);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.timeline-line-fill {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-tertiary));
+  border-radius: 4px;
+  z-index: 2;
+  box-shadow: 0 0 15px var(--accent-primary);
+}
+
+/* Items */
+.timeline-nodes {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  color: var(--text-secondary);
+  transition: all 0.3s;
+}
+
+.timeline-item.completed .timeline-node {
+  border-color: var(--accent-primary);
+  background: var(--accent-primary);
+  color: white;
+  box-shadow: 0 0 15px var(--glow-color);
+}
+
+.timeline-item.current .timeline-node {
+  border-color: var(--accent-tertiary);
+  color: var(--accent-tertiary);
+}
+
+.node-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--accent-tertiary);
+  animation: pulse-ring 2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.current-icon {
+  margin-left: 2px;
+}
+
+/* Card */
+.timeline-card {
+  width: calc(50% - 60px);
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+
+.timeline-item.locked .timeline-card {
+  opacity: 0.6;
+  filter: grayscale(80%);
+}
+
+.card-status-badge {
+  margin-bottom: 1rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 12px;
+  letter-spacing: 1px;
+}
+
+.badge.completed {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--accent-primary);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.badge.current {
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--accent-tertiary);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.badge.locked {
+  background: rgba(148, 163, 184, 0.1);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.timeline-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  margin-top: 1rem;
+  color: #fbbf24;
+}
+
+.continue-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent-tertiary), #3b82f6);
+  color: white;
+  font-weight: 600;
+  transition: filter 0.2s;
+}
+
+.continue-btn:hover {
+  filter: brightness(1.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .timeline-line-bg, .timeline-line-fill {
+    left: 20px;
+  }
+  
+  .timeline-node {
+    left: 20px;
+  }
+  
+  .timeline-item.left, .timeline-item.right {
+    justify-content: flex-end;
+  }
+  
+  .timeline-card {
+    width: calc(100% - 60px);
+  }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(2); opacity: 0; }
+}
