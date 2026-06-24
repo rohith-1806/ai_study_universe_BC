@@ -128,8 +128,6 @@ This project is ready to deploy on:
 
 ### Perumalla Rohith
 
-Built with ❤️ using React & AI
-
 ⭐ If you like this project, give it a star ⭐
 
 </div>
