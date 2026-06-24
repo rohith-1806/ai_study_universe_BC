@@ -1,196 +1,135 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=3000&pause=1000&color=00F5FF&center=true&vCenter=true&width=900&lines=🚀+AI+Study+Universe;Your+Personal+AI+Learning+Companion;Future+of+AI+Powered+Education" />
+# 🧠 AI Study Universe 🌌
+
+### Your Personal AI Powered Learning Companion
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&pause=1000&color=00F5FF&center=true&width=700&lines=Learn+With+AI;Build+Your+Skills;Shape+Your+Future" />
 
 <br/>
 
-<h1>🧠 AI Study Universe 🌌</h1>
-
-<h3>
-An Intelligent AI-Powered Learning Ecosystem Designed For The Future
-</h3>
-
-
-<img src="https://img.shields.io/badge/React-2026-61DAFB?style=for-the-badge&logo=react"/>
-<img src="https://img.shields.io/badge/Vite-Fast-646CFF?style=for-the-badge&logo=vite"/>
-<img src="https://img.shields.io/badge/AI-Powered-FF00FF?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge"/>
+![React](https://img.shields.io/badge/React-2026-61DAFB?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-Fast-646CFF?style=for-the-badge&logo=vite)
+![AI](https://img.shields.io/badge/AI-Powered-FF00FF?style=for-the-badge)
 
 </div>
 
+---
+
+## 🚀 About Project
+
+**AI Study Universe** is a futuristic AI learning platform designed to make education more interactive and personalized.
+
+It provides an engaging learning experience with AI guidance, modern dashboards, roadmaps and progress tracking.
 
 ---
 
-## 🌟 About AI Study Universe
+## ✨ Features
 
-**AI Study Universe** is a futuristic learning platform where Artificial Intelligence transforms the way students learn.
+🧠 **AI Mentor**
+- Interactive AI assistant interface
+- Smart learning guidance
 
-It creates a next-generation digital learning experience with:
+🌌 **Learning Universe**
+- Explore skills with futuristic cards
+- Interactive learning sections
 
-✨ Personalized AI Guidance  
-✨ Interactive Learning Universe  
-✨ Smart Progress Tracking  
-✨ AI Roadmaps  
-✨ Achievement System  
-✨ Futuristic Dashboard  
+📊 **Dashboard**
+- Progress tracking
+- XP system
+- Learning analytics
 
+🗺 **AI Roadmap**
+- Step-by-step learning paths
+- Skill improvement journey
 
----
-
-## 🚀 Project Vision
-
-> "Transform traditional learning into an intelligent, interactive and personalized AI journey."
-
-AI Study Universe combines:
-
-🧠 Artificial Intelligence  
-🌌 Modern UI Experience  
-📊 Smart Analytics  
-🏆 Gamified Learning  
-
-
----
-
-# ✨ Features
-
-
-## 🧠 AI Mentor
-
-A smart AI assistant interface that helps learners with:
-
-✔ Personalized guidance  
-✔ Learning suggestions  
-✔ AI conversation experience  
-✔ Future-ready education
+🏆 **Achievements**
+- Badges
+- Learning milestones
 
 
 ---
 
-## 🌌 Learning Universe
+## 🎨 UI Highlights
 
-Explore skills like a digital universe:
-
-🪐 Python Planet  
-🪐 Machine Learning  
-🪐 Data Science  
-🪐 Web Development  
-🪐 AI Tools
-
-
-Features:
-
-⭐ 3D Hover Effects  
-⭐ Floating Animations  
-⭐ Interactive Cards  
+- 🌙 Dark Mode & ☀️ Light Mode
+- 🧠 Floating AI Brain Animation
+- 🖱️ Custom AI Cursor
+- ✨ Glassmorphism Design
+- 🚀 Smooth Animations
+- 📱 Fully Responsive
 
 
 ---
 
-## 📊 Smart Dashboard
+## 🛠 Tech Stack
 
-Track your learning journey:
-
-📈 Learning Progress  
-⚡ AI Skill Score  
-🔥 XP System  
-🏆 Achievements  
-
-
----
-
-## 🗺 AI Roadmap Generator
-
-Beautiful futuristic roadmap:
-
-START  
-⬇  
-Programming  
-⬇  
-AI Skills  
-⬇  
-Projects  
-⬇  
-Career Ready 🚀
+- ⚛️ React JS
+- ⚡ Vite
+- 🎨 CSS3
+- 🎬 Framer Motion
+- 🧭 React Router
 
 
 ---
 
-# 🎨 UI Experience
+## 🚀 Run Locally
 
+Clone the project
 
-### 🌙 Dark Mode
+```bash
+git clone https://github.com/rohith-1806/ai_study_universe_BC.git
+```
 
-✔ Neon Glow Effects  
-✔ AI Futuristic Theme  
-✔ Glassmorphism Cards  
-✔ Cyber Gradients  
+Install dependencies
 
+```bash
+npm install
+```
 
-### ☀️ Light Mode
+Start development server
 
-✔ Premium SaaS Look  
-✔ Clean Design  
-✔ Smooth Shadows  
+```bash
+npm run dev
+```
 
+Create production build
 
----
-
-# 🔥 Advanced Animations
-
-The interface includes:
-
-✨ Custom AI Cursor  
-✨ Floating AI Brain  
-✨ Particle Effects  
-✨ Smooth Page Transitions  
-✨ Loading Animation  
-✨ Card Hover Effects  
-✨ Scroll Animations  
+```bash
+npm run build
+```
 
 
 ---
 
-# 🛠 Tech Stack
+## 🌐 Deployment
 
+This project is ready to deploy on:
 
-<table>
-
-<tr>
-
-<td align="center">
-⚛️
-<br/>
-React JS
-</td>
-
-
-<td align="center">
-⚡
-<br/>
-Vite
-</td>
-
-
-<td align="center">
-🎨
-<br/>
-CSS3
-</td>
-
-
-<td align="center">
-🎬
-<br/>
-Framer Motion
-</td>
-
-
-</tr>
-
-</table>
+- Vercel
+- Netlify
+- GitHub Pages
 
 
 ---
 
-# 📂 Project Structure
+## 📌 Project Status
 
+✅ Frontend Completed  
+✅ Responsive Design  
+✅ Production Ready  
+
+
+---
+
+<div align="center">
+
+## 👨‍💻 Author
+
+### Perumalla Rohith
+
+Built with ❤️ using React & AI
+
+⭐ If you like this project, give it a star ⭐
+
+</div>
