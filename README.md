@@ -73,33 +73,6 @@ It provides an engaging learning experience with AI guidance, modern dashboards,
 
 ---
 
-## 🚀 Run Locally
-
-Clone the project
-
-```bash
-git clone https://github.com/rohith-1806/ai_study_universe_BC.git
-```
-
-Install dependencies
-
-```bash
-npm install
-```
-
-Start development server
-
-```bash
-npm run dev
-```
-
-Create production build
-
-```bash
-npm run build
-```
-
-
 ---
 
 ## 🌐 Deployment
